@@ -1,2 +1,61 @@
+# ==========================
+# ARQUIVOS DE SISTEMA / IDE
+# ==========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ==========================
+# SEGURANÇA & AMBIENTE
+# ==========================
+# Ignora todos os arquivos .env (frontend e backend)
 .env
+# Caso crie ambientes virtuais locais
 .venv
+venv/
+env/
+
+# ==========================
+# BACKEND (PYTHON / DJANGO)
+# ==========================
+# Bytecode compilado (lixo gerado pelo python)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Banco de Dados SQLite (CRÍTICO: NUNCA COMMITE ISSO)
+*.sqlite3
+*.sqlite3-journal
+
+# Arquivos estáticos e de mídia coletados pelo Django
+staticfiles/
+media/
+
+# ==========================
+# FRONTEND (NODE / NEXT.JS)
+# ==========================
+# Dependências (sem a barra inicial para pegar dentro de /frontend)
+node_modules/
+.pnp
+.pnp.*
+
+# Next.js build output
+.next/
+out/
+
+# Production build
+build/
+
+# Testing
+coverage/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Typescript
+*.tsbuildinfo
+next-env.d.ts
